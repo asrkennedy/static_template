@@ -1,0 +1,74 @@
+@import "compass";
+
+// Fonts
+// @font-face {
+//   font-family: 'Futura';
+//   src: url('../fonts/FuturaBQLight.otf'); /* IE9 Compat Modes */
+//   src: url('../fonts/FuturaBQLight.otf') format('embedded-opentype'), /* IE6-IE8 */
+//        url('../fonts/FuturaBQLight.otf') format('woff2'), Super Modern Browsers
+//        url('../fonts/FuturaBQLight.otf') format('woff'), /* Pretty Modern Browsers */
+//        url('../fonts/FuturaBQLight.otf')  format('truetype'), /* Safari, Android, iOS */
+//        url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+// }
+
+
+// Font weights
+$light: 300;
+$regular: 400;
+$semi-bold: 500;
+$bold: 600;
+
+// Base Font
+$base-font-family: "Futura", sans-serif;
+$sans-serif-font: "Futura", sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 1.3em;
+$base-line-height: 1.4;
+
+// Font sizes
+$title-font-mobile: 8em;
+$button-font-size: 6.375rem;
+$main-header-font-size: 3em;
+$footer-font-size: 2em;
+$mobile-header-font-size: 1.6rem;
+$larger-base-font-size: 1.5rem;
+$sub-font-size: 1em;
+$comic-font-size: 0.625em;
+$comic-header-font-size: 0.75em;
+
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $base-font-family;
+}
+
+a {
+  text-decoration: none;
+}
+
+@import "modules/all";
+@import "modules/colors";
